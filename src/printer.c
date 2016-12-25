@@ -356,11 +356,11 @@ pCell ( suint y, suint x, suint addr )
         } else {
                 in /= g_wZoom;
 
-                if ( in > (( SINST_COUNT / 4 ) * 3 )) {
+                if ( in > (( SINST_COUNT / 3 ) * 2 )) {
                         il = 240;
-                } else if ( in > (( SINST_COUNT / 4 ) * 2 )) {
+                } else if ( in > ( SINST_COUNT / 3 )) {
                         il = '=';
-                } else if ( in > ( SINST_COUNT / 4 )) {
+                } else if ( in ) {
                         il = '-';
                 }
         }

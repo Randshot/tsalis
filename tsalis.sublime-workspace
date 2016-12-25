@@ -483,15 +483,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "printer.c",
-			"settings":
-			{
-				"buffer_size": 11313,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "make",
 	"build_system_choices":
@@ -557,6 +548,12 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Paul/Desktop/git.cmd.txt",
+		"/C/Users/Paul/Dev/apps/tsalis/Makefile",
+		"/C/Users/Paul/Dev/apps/tsalis/tsalis.c",
+		"/C/Users/Paul/Dev/apps/tsalis/printer.c",
+		"/C/Users/Paul/Dev/apps/tsalis/handler.c",
+		"/C/Users/Paul/Desktop/git.cmmds.txt",
 		"/C/Users/Paul/Documents/Work/CV/Curriculum/bio.txt",
 		"/C/zwamp/vdrive/web/cabinetsandco/php/page.php",
 		"/C/zwamp/vdrive/web/cabinetsandco/index.php",
@@ -569,7 +566,6 @@
 		"/C/Users/Paul/Dev/apps/tsalis/src/tsalis.c",
 		"/C/Users/Paul/Dev/standby/apps/Guppies1.0/bin/Release/Instructions.txt",
 		"/C/Users/Paul/Dev/apps/tsalis/include/tsalis.h",
-		"/C/Users/Paul/Dev/apps/tsalis/Makefile",
 		"/C/Users/Paul/Dev/apps/tsalis/include/handler.h",
 		"/C/MinGW/bin/packages.txt",
 		"/C/Users/Paul/Dev/apps/tsalis/bin/anc51",
@@ -679,12 +675,7 @@
 		"/C/MinGW/mingw32/lib/gcc/mingw32/4.8.1/include/c++/bits/basic_string.h",
 		"/C/MinGW/lib/gcc/mingw32/4.8.1/include/c++/string",
 		"/C/MinGW/lib/gcc/mingw32/4.8.1/include/c++/bits/basic_string.h",
-		"/C/Users/Paul/AppData/Local/Temp/SDLTest.c",
-		"/C/Users/Paul/Dev/libs/salis/src/memory.c",
-		"/C/Users/Paul/Dev/libs/salis/src/queue.c",
-		"/C/Users/Paul/Dev/libs/salis/include/queue.h",
-		"/C/Users/Paul/Dev/libs/salis/include/memory.h",
-		"/C/Users/Paul/Dev/standby/libs/lokus/src/queue.c"
+		"/C/Users/Paul/AppData/Local/Temp/SDLTest.c"
 	],
 	"find":
 	{
@@ -702,6 +693,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"create",
 			"8-12",
 			"x",
 			"+",
@@ -828,8 +820,7 @@
 			"// ",
 			"bool",
 			"tsls_",
-			"uint32_t",
-			"sls_mGetAlloc"
+			"uint32_t"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -847,37 +838,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "printer.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11313,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8269,
-								8269
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 5043.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

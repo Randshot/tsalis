@@ -191,7 +191,11 @@ create ( char * cm )
         sq ++;
         sz = atoi ( sq );
 
-        if ( !sz  || !sm_isValid ( ad + sz - 1 )) {
+        if ( sz < sm_getMinBSize () || sz > sm_getMaxBSize ()) {
+                return;
+        }
+
+        if ( !sm_isValid ( ad ) || !sm_isValid ( ad + sz - 1 )) {
                 return;
         }
 
@@ -252,6 +256,19 @@ setERate ( char * cm )
 }
 
 static void
+setBSize ( char * cm )
+{
+        switch ( cm [ 0 ] ) {
+        case 'm':
+                sm_setMinBSize ( atoi ( &cm [ 1 ] ));
+                break;
+        case 'x':
+                sm_setMaxBSize ( atoi ( &cm [ 1 ] ));
+                break;
+        }
+}
+
+static void
 saveSim ( char * cm )
 {
         sl_save ( cm );
@@ -290,6 +307,9 @@ runConsole ( void )
                 break;
         case 'e':
                 setERate ( &cm [ 1 ] );
+                break;
+        case 'b':
+                setBSize ( &cm [ 1 ] );
                 break;
         case 'S':
                 saveSim ( &cm [ 1 ] );

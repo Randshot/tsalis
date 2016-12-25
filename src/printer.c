@@ -326,14 +326,12 @@ pCell ( suint y, suint x, suint addr )
                 pf = sp_isFree ( g_wProc );
         }
 
-        for (; ci < g_wZoom; ci++ ) {
+        for (; ci < g_wZoom; ci ++ ) {
                 suint sadr = addr + ci;
 
                 if ( !sm_isValid ( sadr )) {
                         break;
                 }
-
-                in += sm_getInst ( sadr );
 
                 if ( pr ) {
                         if ( !pf && sadr == pr -> ip ) {
@@ -349,6 +347,16 @@ pCell ( suint y, suint x, suint addr )
                                 incState ( &cs, CS_ALLOC );
                         }
                 }
+        }
+
+        for (ci = 0; ci < g_wZoom; ci++ ) {
+                suint sadr = addr + ci;
+
+                if ( !sm_isValid ( sadr )) {
+                        break;
+                }
+
+                in += sm_getInst ( sadr );
         }
 
         if ( g_wZoom == 1 ) {

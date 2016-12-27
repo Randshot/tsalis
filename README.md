@@ -11,8 +11,20 @@ needed. If you run into any difficulties, please let me know!
 
 ## List of commands
 ### Keyboard commands
-|**Key**        |Action                                                       |
-|---------------|------------------------------------------------------------:|
-|Enter          |Flip page                                                    |
-|Arrow keys     |Scroll page                                                  |
-|Backspace      |Scroll back to top/left                                      |
+|Key            |Action                                                 |
+|---------------|------------------------------------------------------:|
+|Enter          |Flip page                                              |
+|Arrow keys     |Scroll page                                            |
+|Backspace      |Scroll back to top/left                                |
+|g              |Toggle gene/data view (in PROCESS page)                |
+|ws             |Zoom (in WORLD page)                                   |
+|WS             |Pan vertically (in WORLD page)                         |
+|ad             |Pan horizontally (in WORLD view)                       |
+|q              |Pan to 0 (in WORLD view)                               |
+|k              |Pan to selected process (in WORLD view)                |
+|op             |Select next/previous process                           |
+|fl             |Select first/last process                              |
+|zx             |Decrease/increase steps per print                      |
+|F1             |Open console                                           |
+|1              |Step simulation one time                               |
+|Space          |Run/pause simulation                                   |

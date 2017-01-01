@@ -88,15 +88,17 @@ pMemory ( void )
 
         pStr (  8, 0,   "order" );
         pStr (  9, 0,    "size" );
-        pStr ( 10, 0,    "used" );
-        pStr ( 11, 0, "min bsz" );
-        pStr ( 12, 0, "max bsz" );
+        pStr ( 10, 0,     "cap" );
+        pStr ( 11, 0,    "used" );
+        pStr ( 12, 0, "min bsz" );
+        pStr ( 13, 0, "max bsz" );
 
         pVal (  8, 1,    sm_getOrder ());
         pVal (  9, 1,     sm_getSize ());
-        pVal ( 10, 1,     sm_getUsed ());
-        pVal ( 11, 1, sm_getMinBSize ());
-        pVal ( 12, 1, sm_getMaxBSize ());
+        pVal ( 10, 1,      sm_getCap ());
+        pVal ( 11, 1,     sm_getUsed ());
+        pVal ( 12, 1, sm_getMinBSize ());
+        pVal ( 13, 1, sm_getMaxBSize ());
 }
 
 static void

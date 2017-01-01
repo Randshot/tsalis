@@ -256,6 +256,18 @@ setERate ( char * cm )
 }
 
 static void
+setMCap ( char * cm )
+{
+        suint ncap = atoi ( cm );
+
+        if ( !ncap || ( ncap > sm_getSize ())) {
+                return;
+        }
+
+        sm_setCap ( ncap );
+}
+
+static void
 setBSize ( char * cm )
 {
         switch ( cm [ 0 ] ) {
@@ -307,6 +319,9 @@ runConsole ( void )
                 break;
         case 'e':
                 setERate ( &cm [ 1 ] );
+                break;
+        case 'm':
+                setMCap ( &cm [ 1 ] );
                 break;
         case 'b':
                 setBSize ( &cm [ 1 ] );

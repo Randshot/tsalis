@@ -41,7 +41,7 @@ and reloaded as needed.
 |F1             |Open console                                           |
 |1              |Step simulation one time                               |
 |Space          |Run/pause simulation                                   |
-|Esc            |Save and quit simulation                               |
+|End            |Save and quit simulation                               |
 
 ### Console commands
 The console opens up when F1 is pressed. Commands, with their respective
@@ -60,5 +60,5 @@ control some aspects of the simulation. Parameters here are represented by
 |ew*XX*      |rate        |---         |Set WRITE ERRORS to given rate.                         |
 |ec*XX*      |rate        |---         |Set COSMIC RAYS to given rate.                          |
 |ep*XX*      |rate        |---         |Set PROCESS DATA MUTATIONS to given rate.               |
-|bm*XX*      |size        |---         |Set max allowed memory block size to given value.       |
-|bx*XX*      |size        |---         |Set min allowed memory block size to given value.       |
+|bm*XX*      |size        |---         |Set min allowed memory block size to given value.       |
+|bx*XX*      |size        |---         |Set max allowed memory block size to given value.       |

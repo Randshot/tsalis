@@ -351,7 +351,7 @@ pCell ( suint y, suint x, suint addr )
                 }
         }
 
-        for (ci = 0; ci < g_wZoom; ci++ ) {
+        for (ci = 0; ci < g_wZoom; ci ++ ) {
                 suint sadr = addr + ci;
 
                 if ( !sm_isValid ( sadr )) {
@@ -364,13 +364,17 @@ pCell ( suint y, suint x, suint addr )
         if ( g_wZoom == 1 ) {
                 il = sc_instToSymb ( in );
         } else {
-                in /= g_wZoom;
+                suint ni = in / g_wZoom;
 
-                if ( in > (( SINST_COUNT / 3 ) * 2 )) {
+                if ( !ni && in ) {
+                        ni ++;
+                }
+
+                if ( ni > (( SINST_COUNT / 3 ) * 2 )) {
                         il = 240;
-                } else if ( in > ( SINST_COUNT / 3 )) {
+                } else if ( ni > ( SINST_COUNT / 3 )) {
                         il = '=';
-                } else if ( in ) {
+                } else if ( ni ) {
                         il = '-';
                 }
         }

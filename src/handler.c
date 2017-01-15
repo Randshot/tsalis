@@ -408,15 +408,15 @@ th_handle ( int evnt )
         case 'h':
                 tp_pHelp ();
                 break;
-        case 'z':
+        case 'n':
                 if ( g_frmStep > 1 ) {
                         g_frmStep /= 2;
                 }
                 break;
-        case 'x':
+        case 'm':
                 g_frmStep *= 2;
                 break;
-        case KEY_F ( 1 ):
+        case 'c':
                 runConsole ();
                 break;
         case '1':
@@ -429,7 +429,7 @@ th_handle ( int evnt )
         case ERR:
                 act = SFALSE;
                 break;
-        case KEY_END:
+        case 'X':
                 return SFALSE;
         }
 

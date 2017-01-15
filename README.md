@@ -37,11 +37,11 @@ and reloaded as needed.
 |k              |Pan to selected process (in WORLD view)                |
 |op             |Select next/previous process                           |
 |fl             |Select first/last process                              |
-|zx             |Decrease/increase steps per print                      |
-|F1             |Open console                                           |
+|nm             |Decrease/increase steps per print                      |
+|c              |Open console                                           |
 |1              |Step simulation one time                               |
 |Space          |Run/pause simulation                                   |
-|End            |Save and quit simulation                               |
+|X              |Save and quit simulation                               |
 
 ### Console commands
 The console opens up when F1 is pressed. Commands, with their respective

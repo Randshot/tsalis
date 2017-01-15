@@ -152,12 +152,12 @@ pProcGenes ( void )
         suint pi;
 
         attron ( COLOR_PAIR ( 1 ));
-        pStr ( 17, 0, "pidx" );
+        pStr ( 18, 0, "pidx" );
         standend ();
 
-        pStr ( 18, 0, "---" );
+        pStr ( 19, 0, "---" );
 
-        li = 19;
+        li = 20;
         pi = g_vsProcs;
 
         while ( 1 ) {
@@ -195,22 +195,22 @@ pProcList ( void )
         suint pi;
 
         attron ( COLOR_PAIR ( 1 ));
-        pStr ( 17, 0, "pidx" );
+        pStr ( 18, 0, "pidx" );
 
         cl = 1;
         ei = g_hsProcs;
 
         while ( ei < SPELM_COUNT ) {
-                pStr ( 17, cl, PELEM_LIST [ ei ] );
+                pStr ( 18, cl, PELEM_LIST [ ei ] );
                 cl ++;
                 ei ++;
         }
 
         standend ();
 
-        pStr ( 18, 0, "---" );
+        pStr ( 19, 0, "---" );
 
-        li = 19;
+        li = 20;
         pi = g_vsProcs;
 
         while ( 1 ) {
@@ -254,21 +254,23 @@ pProcs ( void )
         pStr (  9, 0,   "cap" );
         pStr ( 10, 0, "first" );
         pStr ( 11, 0,  "last" );
+        pStr ( 12, 0, "fhalt" );
 
         pVal (  8, 1, sp_getCount ());
         pVal (  9, 1,   sp_getCap ());
         pVal ( 10, 1, sp_getFirst ());
         pVal ( 11, 1,  sp_getLast ());
+        pStr ( 12, 1, sp_getFHalt () ? "yes" : "no" );
 
         attron ( COLOR_PAIR ( 1 ));
-        pStr ( 13, 0, "LIST" );
+        pStr ( 14, 0, "LIST" );
         standend ();
 
-        pStr ( 14, 0, "vscroll" );
-        pStr ( 15, 0, g_showGenes ? "gscroll" : "hscroll" );
+        pStr ( 15, 0, "vscroll" );
+        pStr ( 16, 0, g_showGenes ? "gscroll" : "hscroll" );
 
-        pVal ( 14, 1, g_vsProcs );
-        pVal ( 15, 1, g_showGenes ? g_gsProcs : g_hsProcs );
+        pVal ( 15, 1, g_vsProcs );
+        pVal ( 16, 1, g_showGenes ? g_gsProcs : g_hsProcs );
 
         if ( g_showGenes ) {
                 pProcGenes ();

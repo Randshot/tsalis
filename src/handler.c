@@ -127,7 +127,6 @@ panWorld ( int evnt )
 static void
 flipProc ( sbool up )
 {
-        g_wProc += sp_getCap ();
         g_wProc += ( up ? 1 : -1 );
         g_wProc %= sp_getCap ();
 }
@@ -281,6 +280,12 @@ setBSize ( char * cm )
 }
 
 static void
+toggleHalt ( void )
+{
+        sp_setFHalt ( !sp_getFHalt ());
+}
+
+static void
 saveSim ( char * cm )
 {
         sl_save ( cm );
@@ -325,6 +330,9 @@ runConsole ( void )
                 break;
         case 'b':
                 setBSize ( &cm [ 1 ] );
+                break;
+        case 'h':
+                toggleHalt ();
                 break;
         case 'S':
                 saveSim ( &cm [ 1 ] );
@@ -381,6 +389,9 @@ th_handle ( int evnt )
                 break;
         case 'p':
                 flipProc ( STRUE );
+                break;
+        case '0':
+                g_wProc = 0;
                 break;
         case 'f':
                 if ( sp_getCount ()) {

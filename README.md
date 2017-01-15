@@ -49,17 +49,17 @@ parameters separated by underscores, may be written in order to modify or
 control some aspects of the simulation. Parameters here are represented by
 *XX*.
 
-|Command     |Param. 1    |Param. 2    |Action                                                          |
-|:-----------|:-----------|:-----------|---------------------------------------------------------------:|
-|i*XX*_*XX*  |address     |instructions|Writes given instructions into address.                         |
-|c*XX*_*XX*  |address     |file name   |Compiles given file into address.                               |
-|n*XX*_*XX*  |address     |size        |Initializes organism of given size into address.                |
-|k           |---         |---         |Kills organism at bottom of queue (first organism).             |
-|s*XX*       |process id  |---         |Scroll (PROCESS page) to given process.                         |
-|p*XX*       |process id  |---         |Select given process.                                           |
-|ew*XX*      |rate        |---         |Set WRITE ERRORS to given rate.                                 |
-|ec*XX*      |rate        |---         |Set COSMIC RAYS to given rate.                                  |
-|ep*XX*      |rate        |---         |Set PROCESS DATA MUTATIONS to given rate.                       |
-|bm*XX*      |size        |---         |Set min allowed memory block size to given value.               |
-|bx*XX*      |size        |---         |Set max allowed memory block size to given value.               |
-|h           |---         |---         |Toggle "halting" (organisms block on faulty instructions).      |
+|Command     |Param. 1    |Param. 2    |Action                                                           |
+|:-----------|:-----------|:-----------|----------------------------------------------------------------:|
+|i*XX*_*XX*  |address     |instructions|Writes given instructions into address.                          |
+|c*XX*_*XX*  |address     |file name   |Compiles given file into address.                                |
+|n*XX*_*XX*  |address     |size        |Initializes organism of given size into address.                 |
+|k           |---         |---         |Kills organism at bottom of queue (first organism).              |
+|s*XX*       |process id  |---         |Scroll (PROCESS page) to given process.                          |
+|p*XX*       |process id  |---         |Select given process.                                            |
+|ew*XX*      |rate        |---         |Set WRITE ERRORS to given rate.                                  |
+|ec*XX*      |rate        |---         |Set COSMIC RAYS to given rate.                                   |
+|ep*XX*      |rate        |---         |Set PROCESS DATA MUTATIONS to given rate.                        |
+|bm*XX*      |size        |---         |Set min allowed memory block size to given value.                |
+|bx*XX*      |size        |---         |Set max allowed memory block size to given value.                |
+|h           |---         |---         |Toggle "halting" (if on, organisms halt on faulty instructions). |

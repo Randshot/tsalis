@@ -398,12 +398,14 @@ th_handle ( int evnt )
                         g_vsProcs = sp_getFirst ();
                         g_wProc   = sp_getFirst ();
                 }
+
                 break;
         case 'l':
                 if ( sp_getCount ()) {
                         g_vsProcs = sp_getLast ();
                         g_wProc   = sp_getLast ();
                 }
+
                 break;
         case 'h':
                 tp_pHelp ();
@@ -412,9 +414,13 @@ th_handle ( int evnt )
                 if ( g_frmStep > 1 ) {
                         g_frmStep /= 2;
                 }
+
                 break;
         case 'm':
-                g_frmStep *= 2;
+                if ( g_frmStep * 2 ) {
+                        g_frmStep *= 2;
+                }
+
                 break;
         case 'c':
                 runConsole ();

@@ -16,14 +16,12 @@ are being represented by *XX*). Note that, upon exit, *SALIS* automatically
 generates a save file called *def.salis*. This save file may be freely renamed
 and reloaded as needed.
 
-|Arguments      |Action                                                       |
-|:--------------|------------------------------------------------------------:|
-|tsalis         |If file *def.salis* exists in directory, loads simulation
-                 from that file.                                              |
-|tsalis         |If file *def.salis* does not exist, creates new simulation
-                 (memory size 2^16)                                           |
-|tsalis n*XX*   |Creates new simulation with memory size 2^*XX*.              |
-|tsalis l*XX*   |Loads simulation from file named *XX*.                       |
+|Arguments      |Action                                                                         |
+|:--------------|------------------------------------------------------------------------------:|
+|tsalis         |If file *def.salis* exists in directory, loads simulation from that file.      |
+|tsalis         |If file *def.salis* does not exist, creates new simulation (memory size 2^16)  |
+|tsalis n*XX*   |Creates new simulation with memory size 2^*XX*.                                |
+|tsalis l*XX*   |Loads simulation from file named *XX*.                                         |
 
 ### Keyboard commands
 |Key            |Action                                                 |

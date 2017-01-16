@@ -19,7 +19,7 @@ and reloaded as needed.
 |Arguments      |Action                                                                         |
 |:--------------|------------------------------------------------------------------------------:|
 |tsalis         |If file *def.salis* exists in directory, loads simulation from that file.      |
-|tsalis         |If file *def.salis* does not exist, creates new simulation (memory size 2^16)  |
+|tsalis         |If file *def.salis* does not exist, creates new simulation (memory size 2^16). |
 |tsalis n*XX*   |Creates new simulation with memory size 2^*XX*.                                |
 |tsalis l*XX*   |Loads simulation from file named *XX*.                                         |
 

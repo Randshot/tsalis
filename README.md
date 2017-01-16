@@ -38,7 +38,7 @@ and reloaded as needed.
 |op             |Select next/previous process                           |
 |fl             |Select first/last process                              |
 |nm             |Decrease/increase steps per print                      |
-|c              |Open console                                           |
+|c              |Open console (simulation must be paused)               |
 |1              |Step simulation one time                               |
 |Space          |Run/pause simulation                                   |
 |X              |Save and quit simulation                               |

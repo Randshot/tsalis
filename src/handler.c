@@ -423,7 +423,10 @@ th_handle ( int evnt )
 
                 break;
         case 'c':
-                runConsole ();
+                if ( !g_running ) {
+                        runConsole ();
+                }
+
                 break;
         case '1':
                 s_cycle ();

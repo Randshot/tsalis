@@ -375,8 +375,9 @@ pCell ( suint y, suint x, suint addr )
                 }
         }
 
+        move ( y, x );
         attron ( COLOR_PAIR ( 2 + cs ));
-        mvaddch ( y, x, il );
+        addch ( il );
         standend ();
 }
 

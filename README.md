@@ -44,7 +44,7 @@ and reloaded as needed.
 |X              |Save and quit simulation                               |
 
 ### Console commands
-The console opens up when F1 is pressed. Commands, with their respective
+The console opens up when 'c' is pressed. Commands, with their respective
 parameters separated by underscores, may be written in order to modify or
 control some aspects of the simulation. Parameters here are represented by
 *XX*.
